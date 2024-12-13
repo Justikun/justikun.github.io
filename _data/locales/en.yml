@@ -1,0 +1,16 @@
+copyright:
+  license:
+    template: This post is licensed under {{ site.license_name }}.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+  brief: Some rights reserved.
+  verbose: >-
+    Unless otherwise specified, content on this site is licensed under CC BY 4.0.
+
+meta: '<a href="https://www.churchofjesuschrist.org/comeuntochrist/light-the-world" target="_blank" rel="noopener noreferrer">🎄 Help someone this Christmas 🎄</a> &nbsp; &nbsp; <a href="https://jnury.com" target="_blank" rel="noopener noreferrer">Check out my main site!</a>' 
+not_found:
+  statment: Uh oh, that page seems to be lost in space! 🌌 Try searching or heading back to the <a href="/">homepage</a>.
+
+notification:
+  update_found: New content is available! Check it out! 
+  update: Update!

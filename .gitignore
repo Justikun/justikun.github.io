@@ -1,3 +1,6 @@
+# ENV
+.env
+
 # Bundler cache
 .bundle
 vendor

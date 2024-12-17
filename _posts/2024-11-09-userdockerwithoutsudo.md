@@ -4,15 +4,17 @@ date: 2024-11-09 12:00:00 -0700
 categories: [Docker]
 tags: [docker, linux, debian, ubuntu]
 ---
-## Add your user to the docker group
+## 1. Add your user to the docker group
 To use Docker commands without sudo, you need to add your user to the docker group. This group has the necessary permissions to interact with Docker.
 ```bash
 sudo usermod -aG docker $(whoami)
 ```
-## Log out and log back in
+>Be sure that you're logged in as the user you want to make these changes to. Or you can explicitly put the name of the user in place of `$(whoami)`
+{: .prompt-info }
+## 2. Log out and log back in
 For the changes to take effect, log out of your current session and log back in. You can do so with `exit`.
 
-## Extra - Breakdown how how the command works.
+## Learn More - Breakdown of the command
 sudo
 : This part executes the following command with root privileges.
 Since modifying user groups requires administrative access, sudo is necessary. If you are running this command from root, you will not need sudo.
@@ -31,4 +33,4 @@ This group has the necessary permissions to interact with Docker commands and se
 \$(whoami)
 : This is command substitution.
 whoami is a command that returns the current username.
-The `$()` syntax executes the whoami command and substitutes its output (the username) into the usermod command. You may also explicitly specify the user by replacing `$(whoami)` with the user_name.
+The `$()` syntax executes the whoami command and substitutes its output (the username) into the usermod command. You may also explicitly specify the user by replacing `$(whoami)` with the username.

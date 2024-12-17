@@ -39,7 +39,7 @@ Locate the `#Port 22` line and uncomment it. Then, change the port number to you
 Port 51234
 ```
 
-Save and exit the file by pressing `Ctrl+X`, then `Y`, and finally Enter.
+Save and exit the file by pressing `CTRL + X`, then `Y`, and finally Enter.
 
 ### 4. Restart the ssh server 
 To apply the changes to the SSH configuration, restart the SSHD service:
@@ -56,10 +56,9 @@ sudo ufw default allow outgoing
 
 sudo ufw enable
 ```
-This configuration blocks all incoming network traffic by default, except for SSH connections originating from your local network. Replace '192.168.1.0/24' with the actual subnet of your local network. All outgoing traffic from the server is permitted.
+This configuration blocks all incoming network traffic by default, except for SSH connections originating from your local network. Replace '192.168.1.0/24' with the actual subnet of your local network. Then we allow all outgoing traffic from the server. And finally we enable the ufw firewall.
 
 >Note: These firewall rules are a basic starting point. You'll likely need to adjust them based on your specific project requirements and security needs. You will also need to ensure your router's firewall is up and configured.
 {: .prompt-warning }
-
 
 I hope this revised checklist helps you quickly set up the basics of your new Debian server.
